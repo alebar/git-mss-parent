@@ -15,7 +15,19 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
+
+    <libs.core.version>1.0-SNAPSHOT</libs.core.version>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>pl.a21z.git-wf.libs</groupId>
+        <artifactId>core</artifactId>
+        <version>${libs.core.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
